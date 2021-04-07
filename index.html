@@ -9,14 +9,24 @@
 
     <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <small>Main Menu</small>
+    <small>Menu</small>
     <a href="#"><i class="fas fa-home fa-fw sidenav-icons"></i>Home Page</a>
-    <a href="#"><i class="fas fa-users fa-fw sidenav-icons"></i>View Sales Rep List</a>
-    <a href="#"><i class="fas fa-project-diagram fa-fw sidenav-icons"></i>Product Categories</a>
+    <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-box-open fa-fw sidenav-icons"></i>Ordering<i class="arrow"></i></a>
+        <div class="sidenav--dropdown-container">
+            <a href="#">Quick Ordering</a>
+            <a href="#">Pre-Book Contracts</a>
+        </div>
+    <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-project-diagram fa-fw sidenav-icons"></i>Products & Promotions<i class="arrow"></i></a>
+        <div class="sidenav--dropdown-container">
+            <a href="#">Target List</a>
+            <a href="#">Monthly Promotions</a>
+            <a href="#">All Product Categories</a>
+        </div>
+    <a href="#"><i class="fas fa-users fa-fw sidenav-icons"></i>Sales Rep List</a>
     <a href="#"><i class="fas fa-pager fa-fw sidenav-icons"></i>Header Message</a>
     <a href="#"><i class="fas fa-mobile fa-fw sidenav-icons"></i>Mobile Notification</a>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-box-open fa-fw sidenav-icons"></i>Order Services <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Target Items</a>
             <a href="#">Office Approved Items</a>
             <a href="#">Quick List Items</a>
@@ -25,7 +35,7 @@
             <a href="#">Print Order Receipts</a>
         </div>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-clipboard-list fa-fw sidenav-icons"></i>Order Reports <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Instant Analysis</a>
             <a href="#">Top Selling Products</a>
             <a href="#">Bottom Selling Products</a>
@@ -46,20 +56,25 @@
             <a href="#">Sample Request Report</a>
         </div>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-map-marker-alt fa-fw sidenav-icons"></i>Tracking Reports <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Order Tracking</a>
             <a href="#">Tracking Summary</a>
             <a href="#">Customer Tracking</a>
             <a href="#">Vendor Invoice Details</a>
             <a href="#">Vendor Invoice Summary</a>
         </div>
-    <a href="#"><i class="fas fa-coins fa-fw sidenav-icons"></i>Spotlight Rewards Report</a>
+    <a href="#"><i class="fas fa-coins fa-fw sidenav-icons"></i>Rewards Program</a>
     <a href="#"><i class="fas fa-flag fa-fw sidenav-icons"></i>Redemption Report</a>
+    <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-wrench fa-fw sidenav-icons"></i>Tools<i class="arrow"></i></a>
+        <div class="sidenav--dropdown-container">
+            <a href="#">Savings Grid</a>
+            <a href="#">Profit Calculator</a>
+        </div>
     <small>Vendor Services</small>
     <a href="#"><i class="fas fa-handshake fa-fw sidenav-icons"></i>Vendor Deal Entry</a>
     <a href="#"><i class="fas fa-image fa-fw sidenav-icons"></i>Image Upload</a>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-file-alt fa-fw sidenav-icons"></i>Reports <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Vendor Deal Proposals</a>
             <a href="#">Product Image Listing</a>
             <a href="#">Nutrional Label Image Listing</a>
@@ -72,21 +87,21 @@
     <a href="#"><i class="fas fa-user-friends fa-fw sidenav-icons"></i>Active Users</a>
     <a href="#"><i class="fas fa-file-upload fa-fw sidenav-icons"></i>Customer File Uploads</a>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-users-cog fa-fw sidenav-icons"></i>Manage Users <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Vendor Deal Proposals</a>
             <a href="#">Product Image Listing</a>
             <a href="#">Nutrional Label Image Listing</a>
             <a href="#">Ingredients Image Listing</a>
         </div>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-tasks fa-fw sidenav-icons"></i>Manage Products <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Vendor Deal Proposals</a>
             <a href="#">Product Image Listing</a>
             <a href="#">Nutrional Label Image Listing</a>
             <a href="#">Ingredients Image Listing</a>
         </div>
     <a href="javascript:void(0)" class="dropdown-btn"><i class="fas fa-table fa-fw sidenav-icons"></i>Reports <i class="arrow"></i></a>
-        <div class="dropdown-container">
+        <div class="sidenav--dropdown-container">
             <a href="#">Vendor Deal Proposals</a>
             <a href="#">Product Image Listing</a>
             <a href="#">Nutrional Label Image Listing</a>
@@ -94,26 +109,35 @@
         </div>
     </div>
 
-    <div class="navbar">
-        <div class="dropdown">
-          <button class="dropbtn">Welcome Jordan - VeraPro, to Spotlight Innovations' Virtual Market &nbsp;
-            <i class="arrow"></i>
-          </button>
-          <div class="dropdown-content">
-            <p class="user-dropdown-items">Mobile App Link: tracklitepwa.lekolite.co</p>
-            <p class="user-dropdown-items">Verification Key: 6b054b59</p>
-            <p class="user-dropdown-items">Currently Acting as: Customer</p>
-            <a href="javascript:void(0)" class="dropdown-btn">Account Services <i class="arrow"></i></a>
-                <div class="dropdown-container">
-                    <a href="#">Change Your Password</a>
-                    <a href="#">Adjust Site Settings</a>
-                    <a href="#">Associated Services</a>
-                </div>
-            <a href="#">Log out</a>
-          </div>
+    <div class="topnav">
+        <span class="sidenav--menu-button" onclick="openNav()"><i class="fas fa-bars"></i> Menu</span>
+        <div class="topnav--search float-left">
+            <form action="#">
+              <input type="text" placeholder="Quick Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
-      </div>
-    <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+        <div class="topnav--nav-items">
+            <span class="float-left">Welcome, Jordan - VeraPro &nbsp;</span>
+            <div class="topnav--dropdown">
+                <button class="topnav--button"><i class="fas fa-sort-down fa-rotate-90"></i><i class="fas fa-user-circle icon-big"></i></button>
+                    <div class="topnav--dropdown-container">
+                        <a href="#">Mesage Center</a>
+                        <a href="#">Push Notifications</a>
+                        <a href="#">View/Edit Store Contact</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+            </div>
+            <div class="topnav--dropdown">
+                <button class="topnav--button"><i class="fas fa-shopping-cart icon-big"></i></button>
+                    <div class="topnav--dropdown-container">
+                        <a href="#">View Cart</a>
+                        <a href="#">Items Purchased</a>
+                        <a href="#">Quick View</a>
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="sidenav.js"></script>
     
