@@ -15,8 +15,8 @@ body {
   border: solid;
   border-width: 0 0.1rem 0.1rem 0;
   padding: 3px 3px 3px 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   margin-bottom: 3px;
   float: right;
   margin-right: 0.6rem;
@@ -26,6 +26,10 @@ body {
 .active {
   background-color: #eff2f6;
   color: #293042 !important;
+}
+
+.icon-small {
+  font-size: 75%;
 }
 
 .icon-big {
@@ -43,6 +47,10 @@ body {
 /***********************/
 /*** Side Navigation ***/
 /***********************/
+
+#mySidenav {
+  overflow: hidden;
+}
 
 .sidenav--menu-button {
   margin: 0;
@@ -65,7 +73,6 @@ body {
   transition: 0.5s;
   padding: 30px 0px 20px 0px;
   box-shadow: 10px 0 5px -2px #888;
-  overflow-y: auto;
   bottom: 0;
 }
 
@@ -114,12 +121,27 @@ body {
   padding-right: 20px;
 }
 
+.sidenav--menu {
+  position: relative;
+}
+
 .sidenav--dropdown-container {
   display: none;
   background-color: #eff2f6;
-  padding-left: 8px;
-  z-index: 9999;
-  overflow: initial !important;
+  z-index: 9999 !important;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu--dropdown-container {
+  display: none;
 }
 
 /* Media query for side navigation */
@@ -170,7 +192,7 @@ body {
 }
 
 .topnav--search input[type="text"] {
-  padding: 6px;
+  padding: 6px 0px 6px 6px;
   margin-top: 11px;
   font-size: 17px;
   border: none;
